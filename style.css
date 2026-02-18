@@ -1,0 +1,371 @@
+html {
+    scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*#region "header"*/
+
+header {
+    height: 120px;
+    padding-left: 160px;
+    padding-right: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 0px 8px lightgray;
+}
+
+.logoMobile {
+    display: none;
+}
+
+.content {
+    height: auto;
+    width: auto;
+    position: relative;
+    overflow-x: hidden;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    align-items: end;
+    gap: 16px
+}
+
+nav a {
+    color: black;
+    padding-bottom: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition-duration: 0.25s;
+}
+
+nav a:hover {
+    color: green;
+    cursor: pointer;
+    text-decoration: underline green;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 4px;
+    cursor: pointer;
+}
+
+/* .navTabletPhone {
+    display: none;
+    } */
+
+.resp_menu_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 180px;
+    height: auto;
+    position: absolute;
+    top: 120px;
+    right: 160px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.resp_menu_box a {
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.resp_menu_box a:hover {
+    background-color: rgb(237 237 237);
+    width: 100%;
+}
+
+
+.resp_menu_closed {
+    transform: translateX(400px);
+}
+
+.burgerMenu {
+    display: none;
+}
+
+
+label.hamburg {
+    display: block;
+    background: green;
+    width: 75px;
+    height: 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+}
+
+input#hamburg {
+    display: none
+}
+
+.line {
+    position: absolute;
+    left: 10px;
+    height: 4px;
+    width: 55px;
+    background: #fff;
+    border-radius: 2px;
+    display: block;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.line:nth-child(1) {
+    top: 12px;
+}
+
+.line:nth-child(2) {
+    top: 24px;
+}
+
+.line:nth-child(3) {
+    top: 36px;
+}
+
+#hamburg:checked+.hamburg .line:nth-child(1) {
+    transform: translateY(12px) rotate(-45deg);
+}
+
+#hamburg:checked+.hamburg .line:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburg:checked+.hamburg .line:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+
+label.hamburg:hover {
+    cursor: pointer;
+}
+
+/*#endregion "header"*/
+
+button {
+    background-color: green;
+    color: white;
+    padding: 0.625rem 2.1875rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 0;
+    font-size: 14px;
+    cursor: pointer;
+    width: 240px;
+    transition: transform 100ms ease, color 100ms ease;
+}
+
+.tagesrezept_frontpage {
+    display: flex;
+    padding-inline: 160px;
+}
+
+.tagesrezept_frontpage a img {
+    height: 320px;
+    width: 480px;
+    padding: 24px;
+    border: 0;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.tagesrezept_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 24px;
+}
+
+figure img {
+    height: 240px;
+    width: 240px;
+    border: 0;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.frontpage_suggestions {
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 160px;
+    padding-block: 24px;
+}
+
+figcaption {
+    font-weight: bold;
+    text-align: center;
+}
+
+.frontpage_topic {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 24px;
+    padding-inline: 160px;
+}
+
+.topic_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.topic_img a img {
+    height: 320px;
+    width: 320px;
+    border: 0;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* =====================
+   Footer
+===================== */
+.footer {
+    /* background: linear-gradient(var(--color-footer-bg-start), var(--color-footer-bg-end)); */
+    background-color: gray;
+    color: var(--color-footer-text);
+    padding-inline: clamp(var(--space-m), 5vw, var(--space-xl));
+    padding-block: 4rem 1rem;
+    /* top: 64px, bottom: 16px */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-l);
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-column {
+    flex: 1 1 220px;
+    min-width: 220px;
+}
+
+.footer h3 {
+    margin-bottom: var(--space-m);
+    font-size: var(--h5);
+}
+
+.footer p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer a {
+    color: var(--color-footer-link);
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 100ms ease, color 100ms ease;
+}
+
+.footer a:hover {
+    color: var(--color-footer-link-hover);
+    transform: scale(1.2);
+}
+
+.subscribe-form {
+    display: flex;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: .6rem;
+    border: none;
+    outline: none;
+    min-width: 0;
+}
+
+.subscribe-form button {
+    background: var(--color-primary);
+    border: none;
+    padding: .6rem 1rem;
+    color: white;
+    cursor: pointer;
+    transition: transform 100ms ease, color 100ms ease;
+    min-width: 90px;
+}
+
+#button-hover:hover {
+    background: #005f00;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: var(--space-l);
+    font-size: .9rem;
+    color: #aaa;
+}
+
+@media(max-width: 1280px) {
+    .navDesktop {
+        display: none;
+    }
+
+    .resp_menu_box {
+        right: 24px
+    }
+
+    .navTabletPhone {
+        display: flex;
+    }
+
+    nav.navTabletPhone a {
+        text-decoration: none;
+        filter: none;
+    }
+
+    .burgerMenu {
+        display: flex;
+    }
+
+    header {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 536px) {
+    .footer-column {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe-form input,
+    .subscribe-form button {
+        width: 90%;
+        border-radius: 6px;
+    }
+
+    .subscribe-form button {
+        margin-top: 0.5rem;
+    }
+}

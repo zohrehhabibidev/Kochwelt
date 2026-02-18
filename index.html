@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/img/logo_small.png" type="imgage/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script>
+        function toggleRespMenu() {
+            document.getElementById("resp_menu").classList.toggle('resp_menu_closed')
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+
+
+            <img class="logoDesktop" src="./img/logo.png" style="height: 96px; width: auto;">
+
+            <img class="logoMobile" src="./img/logo_small.png" style="height: 64px; width: auto;">
+
+            <nav class="navDesktop">
+                <a href="#">Start</a>
+                <a href="#">Rezept des Tages</a>
+                <a href="#">Kontakt</a>
+                <a href="#">Impressum</a>
+            </nav>
+
+
+            <nav id="resp_menu" class="navTabletPhone resp_menu_box resp_menu_closed" onclick="toggleRespMenu()">
+                <a href="index.html">Start</a>
+                <a href="#">Rezept des Tages</a>
+                <a href="#">Kontakt</a>
+                <a href="#">Impressum</a>
+            </nav>
+
+            <div class="burgerMenu">
+                <input type="checkbox" id="hamburg" onclick="toggleRespMenu()">
+                <label for="hamburg" class="hamburg">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </label>
+            </div>
+
+
+        </header>
+        <main>
+            <section class="tagesrezept_frontpage">
+                <a href="#"><img src="img/salad.jpg" alt="Bild eines Salates"></a>
+                <div class="tagesrezept_text">
+                    <h2>Griechsicher Bauernsalat</h2>
+                    <p>Gesund und leicht selbst zu machen! Unser Griechsicher Bauernsalat
+                        ist fix und fertig in 15 Minuten. Ob als Start in den Tag
+                        oder als Beilage unsere Salat gelingt immer. Finden Sie hier heraus,
+                        wie es geht!
+                    </p>
+                    <button>Rezept öffnen</button>
+                </div>
+            </section>
+            <section class="frontpage_suggestions">
+                <div>
+                    <figure>
+                        <img src="img/croissant.jpg" alt="">
+                        <figcaption>Frische croissant</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="img/croissant.jpg" alt="">
+                        <figcaption>Frische croissant</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="img/croissant.jpg" alt="">
+                        <figcaption>Frische croissant</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section class="frontpage_topic">
+                <div class="topic_text">
+                    <h2>Bauernsalat vs Nudelsalat! Was ist besser?</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet.</p>
+                </div>
+                <div class="topic_img">
+                    <a href="#"><img src="img/wok.jpg" alt=""></a>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER START -->
+        <footer class="footer">
+            <!-- Footer Container START -->
+            <div class="footer-container">
+                <!-- Unternehmen Column START -->
+                <div class="footer-column">
+                    <h3>Unternehmen</h3>
+                    <ul>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">Datenschutz</a></li>
+                        <li><a href="#">Werben Sie bei uns</a></li>
+                    </ul>
+                </div>
+                <!-- Unternehmen Column END -->
+
+                <!-- Quicklinks Column START -->
+                <div class="footer-column">
+                    <h3>Quicklinks</h3>
+                    <ul>
+                        <li><a href="#">Nutzungsbedingungen</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <!-- Quicklinks Column END -->
+
+                <!-- Newsletter Column START -->
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Frische Inspiration direkt in dein Postfach!</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Email" />
+                        <button type="submit" id="button-hover">Anmelden</button>
+                    </form>
+                </div>
+                <!-- Newsletter Column END -->
+            </div>
+            <!-- Footer Container END -->
+
+            <!-- Footer Bottom START -->
+            <div class="footer-bottom">© 2026 Kochwelt</div>
+            <!-- Footer Bottom END -->
+        </footer>
+        <!-- FOOTER END -->
+</body>
+
+</html>
