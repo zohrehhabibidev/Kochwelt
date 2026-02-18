@@ -167,7 +167,6 @@ button {
     border: 0;
     font-size: 14px;
     cursor: pointer;
-    width: 240px;
     transition: transform 100ms ease, color 100ms ease;
 }
 
@@ -188,6 +187,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    text-align: center;
     padding: 24px;
 }
 
@@ -224,9 +224,13 @@ figcaption {
     justify-content: space-evenly;
 }
 
+.topic_text p {
+    padding-right: 32px;
+}
+
 .topic_img a img {
-    height: 320px;
-    width: 320px;
+    height: 240px;
+    width: 240px;
     border: 0;
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
@@ -346,9 +350,84 @@ figcaption {
         padding-left: 24px;
         padding-right: 24px;
     }
+
+    .tagesrezept_frontpage {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tagesrezept_text p {
+        padding: 24px;
+    }
 }
 
+@media(max-width: 1150px) {
+    .tagesrezept_frontpage a img {
+        height: 280px;
+        width: 440px;
+    }
+
+    .frontpage_suggestions {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+@media(max-width: 767px) {
+    .tagesrezept_frontpage {
+        padding-inline: 80px;
+    }
+
+    .frontpage_suggestions {
+        padding-inline: 80px;
+    }
+
+    .frontpage_topic {
+        flex-direction: column-reverse;
+        padding-inline: 80px;
+        gap: 24px;
+    }
+
+    .topic_img {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .topic_img a img {
+        height: 180px;
+        width: 180px;
+    }
+}
+
+
+
 @media (max-width: 536px) {
+    .tagesrezept_frontpage {
+        padding-inline: 40px;
+    }
+
+    .tagesrezept_frontpage a img {
+        height: 220px;
+        width: 280px;
+    }
+
+
+    .frontpage_suggestions {
+        padding-inline: 40px;
+    }
+
+    .frontpage_topic {
+        padding-inline: 40px;
+    }
+    .topic_img {
+        align-self: center;
+    }
+
+    .hide_mobile {
+        display: none;
+    }
+
     .footer-column {
         flex: 1 1 100%;
         text-align: center;
