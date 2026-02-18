@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezept</title>
+    <link rel="stylesheet" href="style-zohreh.css" />
+    <link rel="icon" href="./assets/img/logo_small.png" type="imgage/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+CU+Guides&family=Playwrite+NZ+Basic:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Viga&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navigation-container">
+      <img src="./assets/img/logo.png" class="nav-logo" alt="logo" />
+      <nav class="navigation">
+        <a href="#start" class="nav-link">Start</a>
+        <a href="#rezept" class="nav-link">Rezept des Tages</a>
+        <a href="#kontakt" class="nav-link">Kontakt</a>
+        <a href="#impressum" class="nav-link">Impressum</a>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="title-section">
+        <span>Griechischer Bauernsalat</span>
+        <div class="title-section-img"></div>
+        <div class="title-section-buttons">
+          <button class="title-section-button">
+            <img
+              src="./assets/img/icons/clock-regular.svg"
+              width="15"
+              height="auto"
+              alt="clock image"
+            />
+            15 Min.
+          </button>
+          <button class="title-section-button">
+            <img
+              src="./assets/img/icons/brain-solid.svg"
+              width="15"
+              height="auto"
+              alt="clock image"
+            />
+            simpel
+          </button>
+          <button class="title-section-button">
+            <img
+              src="./assets/img/icons/calendar-alt-regular.svg"
+              width="15"
+              height="auto"
+              alt="clock image"
+            />
+            28.09.2020
+          </button>
+        </div>
+      </section>
+      <hr class="divider" />
+      <section class="ingredients-section">
+        <form class="people-count">
+          <label for="people-count" class="people-count-label"
+            >Zutaten für</label
+          >
+          <div class="people-count-form">
+            <input
+              type="number"
+              id="people-count"
+              min="0"
+              max="4"
+              class="people-count-input"
+              placeholder="Number of people"
+            />
+            <button class="people-count-button" type="submit">Portionen</button>
+          </div>
+        </form>
+        <table class="ingredients-table">
+          <tr>
+            <td>1 Salatgurke (n)</td>
+          </tr>
+          <tr>
+            <td>2 Paprikaschot(n), rot und grün</td>
+          </tr>
+          <tr>
+            <td>500g Tomate (n)</td>
+          </tr>
+          <tr>
+            <td>2 Zwiebel(n)</td>
+          </tr>
+          <tr>
+            <td>200g Schafskäse (n)</td>
+          </tr>
+          <tr>
+            <td>1 Glas Oliven, schwarze, ca 100g</td>
+          </tr>
+          <tr>
+            <td>Salz und Pfeffer</td>
+          </tr>
+          <tr>
+            <td>1 Zitrone(n)</td>
+          </tr>
+          <tr>
+            <td>125ml Olivenöl</td>
+          </tr>
+          <tr>
+            <td>Oregano</td>
+          </tr>
+        </table>
+      </section>
+      <section class="preparation-description">
+        <span class="preparation-description-title">Zubereitung</span>
+        <div class="preparation-description-buttons">
+          <button class="preparation-description-button">
+            <img
+              src="./assets/img/icons/clock-regular.svg"
+              width="15"
+              height="auto"
+              alt="clock image"
+            />
+            ca. 15 Minuten
+          </button>
+          <button class="preparation-description-button">
+            <img
+              src="./assets/img/icons/clock-regular.svg"
+              width="15"
+              height="auto"
+              alt="clock image"
+            />
+            Gesamtzeit ca. 15 Minuten.
+          </button>
+        </div>
+        <span class="preparation-description-text"
+          >Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden.
+          Paprika waschen, entkernen und in dünne Streifen schneiden. Tomaten
+          waschen und achteln. Zwiebeln schälen und in feine Ringe schneiden.
+          Schafskäse würfeln und mit Oregano bestreuen. Oliven abgießen und mit
+          Gurke, Paprika, Tomaten, Zwiebeln und Schafskäse in eine Schüssel
+          geben. Olivenöl, Zitronensaft, Salz und Pfeffer zu einer Sauce
+          verrühren und über den Salat gießen. Umrühren.
+        </span>
+      </section>
+      <section class="recipe-owner-info">
+        <span class="recipe-owner-info-title">Rezept erstellt von</span>
+        <div class="recipe-owner-info-img">
+          <img src="./assets/img/CV-Image .jpg" alt="profile image" />
+          <span>Zohreh</span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-links">
+        <!-- <img src="./assets/img/logo_small.png" alt="logo" /> -->
+        <a href="#" class="footer-link">Datenschutz</a>
+        <a href="#" class="footer-link">Impressum</a>
+        <a href="#" class="footer-link">Nutzungsbedingungen</a>
+        <a href="#" class="footer-link">Kontakt</a>
+      </div>
+      <div class="Subscribe-container-form">
+        <span class="Subscribe-container-form-title"
+          >Subscribe to get latest recipes!</span
+        >
+        <form action="/" class="Subscribe-form">
+          <input
+            type="email"
+            class="Subscribe-container-form-input"
+            placeholder="Email *"
+            id="form-input-email"
+          />
+          <button type="submit" class="Subscribe-container-form-button">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
