@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="styles-franzy.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="section-header">
+      <div class="header-logo-side">
+        <a href="indext.html"><img class="header-logo" src="img/logo.png" /></a>
+      </div>
+      <nav>
+        <!--Burger-->
+        <button class="burger-btn">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+        <!--Menü-->
+        <ul class="menu">
+          <li><a class="link" href="#">Start</a></li>
+          <li><a class="link" href="#">Rezept des Tages</a></li>
+          <li><a class="link" href="#">Kontakt</a></li>
+          <li><a class="link" href="#">Impressum</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section-headline">
+      <h1>Bunter Schnitzeltopf mit Reis</h1>
+      <img class="salat-img" src="img/schnitzel.webp" />
+      <div class="icon-container">
+        <div class="info-box">
+          <img class="icon" src="img/icons/clock-regular.svg" />
+          35 Min.
+        </div>
+
+        <div class="info-box">
+          <img class="icon" src="img/icons/brain-solid.svg" />
+          simpel
+        </div>
+        <div class="info-box">
+          <img class="icon" src="img/icons/calendar-alt-regular.svg" />
+          17.02.2026
+        </div>
+      </div>
+    </section>
+
+    <hr class="devider" />
+
+    <section class="section-ingredients">
+      <div class="portion-control">
+        <label for="amount">Zutaten für</label>
+        <div class="input-group">
+          <input type="number" id="amount" min="1" max="6" value="1" required />
+          <button class="btn">Portionen</button>
+        </div>
+      </div>
+
+      <div class="ingredients">
+        <ul class="list">
+          <li class="ingredient-row">75g Basmatireis</li>
+          <li class="ingredient-row">1 Stk. Schweineschnitzel</li>
+          <li class="ingredient-row">250g grüne Bohnen, Dose</li>
+          <li class="ingredient-row">1x Paprika</li>
+          <li class="ingredient-row">63g braune Champignos</li>
+          <li class="ingredient-row">65ml Kochsahne</li>
+          <li class="ingredient-row">0.75 EL Butter</li>
+          <li class="ingredient-row">100ml Gemüsebrühe</li>
+          <li class="ingredient-row">0.5 EL Weizenmehl</li>
+          <li class="ingredient-row">0.5 TL Paprikapulver</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-preparation">
+      <h2>Zubereitung</h2>
+      <div class="container-info-box">
+        <div class="info-box">
+          <img class="icon" src="img/icons/clock-regular.svg" />
+          ca. 20 Minuten
+        </div>
+        <div class="info-box">
+          <img class="icon" src="img/icons/clock-regular.svg" />
+          Gesamtzeit ca 35. Minuten
+        </div>
+      </div>
+      <p>
+        Basmatireis in einem Topf gemäß Packungsanleitung kochen.<br />
+        Schweineschnitzel in ca. 3cm große Streifen schneiden und die Dose mit
+        den grünen Bohnen abgießen.<br />
+        Paprika waschen, entkernen und in Würfel schneiden. Die braunen
+        Champignons putzen und vierteln. <br />
+        In einer Schüssel Schweineschnitzel mit etwas Salz und Pfeffer
+        würzen.<br />
+        Anschließend mit Mehl vermengen. In einem großen Topf Butter auf
+        mittlerer Stufe erhitzen. Schnitzelstreifen<br />
+        darin 2 Min. kräftig anbraten. 1 EL Butter und Paprikapulver sowie das
+        Gemüse zugegeben und 3 Min mitrösten.<br />
+        Mit 400ml Gemüsebrühe ablöschen und aufkochen lassen.<br />
+        Alles 5 Min köcheln lassen und dann mit Kochsahne aufgießen. Für 10
+        Min<br />
+        zu einer sämigen Soße einköcheln lassen und mit Salz und Pfeffer
+        abschmecken.
+      </p>
+      <div>
+        <span><strong>Rezept erstellt von</strong></span>
+        <div class="author">
+          <img class="profile-icon" src="img/solo.jpeg" />
+          <strong>Franzy</strong>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-left">
+        <img class="logo-footer" src="img/logo_small.png" />
+      </div>
+      <div class="footer-right">
+        <a href="#">Impressum</a>
+      </div>
+    </footer>
+  </body>
+</html>
