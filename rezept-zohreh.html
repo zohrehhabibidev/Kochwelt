@@ -14,8 +14,11 @@
     />
   </head>
   <body>
+    <!-- HEADER START -->
     <header class="navigation-container">
+      <!-- Logo -->
       <img src="./assets/img/logo.png" class="nav-logo" alt="logo" />
+      <!-- Navigation Menu -->
       <nav class="navigation">
         <a href="#start" class="nav-link">Start</a>
         <a href="#rezept" class="nav-link">Rezept des Tages</a>
@@ -23,9 +26,13 @@
         <a href="#impressum" class="nav-link">Impressum</a>
       </nav>
     </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN CONTENT START -->
     <main class="main-container">
+      <!-- Title Section START -->
       <section class="title-section">
-        <span>Griechischer Bauernsalat</span>
+        <h1>Griechischer Bauernsalat</h1>
         <div class="title-section-img"></div>
         <div class="title-section-buttons">
           <button class="title-section-button">
@@ -42,7 +49,7 @@
               src="./assets/img/icons/brain-solid.svg"
               width="15"
               height="auto"
-              alt="clock image"
+              alt="brain image"
             />
             simpel
           </button>
@@ -51,14 +58,19 @@
               src="./assets/img/icons/calendar-alt-regular.svg"
               width="15"
               height="auto"
-              alt="clock image"
+              alt="calendar image"
             />
             28.09.2020
           </button>
         </div>
       </section>
+      <!-- Title Section END -->
+
       <hr class="divider" />
+
+      <!-- Ingredients Section START -->
       <section class="ingredients-section">
+        <!-- People Count Form START -->
         <form class="people-count">
           <label for="people-count" class="people-count-label"
             >Zutaten für</label
@@ -75,6 +87,9 @@
             <button class="people-count-button" type="submit">Portionen</button>
           </div>
         </form>
+        <!-- People Count Form END -->
+
+        <!-- Ingredients Table START -->
         <table class="ingredients-table">
           <tr>
             <td>1 Salatgurke (n)</td>
@@ -107,9 +122,13 @@
             <td>Oregano</td>
           </tr>
         </table>
+        <!-- Ingredients Table END -->
       </section>
+      <!-- Ingredients Section END -->
+
+      <!-- Preparation Section START -->
       <section class="preparation-description">
-        <span class="preparation-description-title">Zubereitung</span>
+        <h2 class="preparation-description-title">Zubereitung</h2>
         <div class="preparation-description-buttons">
           <button class="preparation-description-button">
             <img
@@ -130,8 +149,8 @@
             Gesamtzeit ca. 15 Minuten.
           </button>
         </div>
-        <span class="preparation-description-text"
-          >Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden.
+        <span class="preparation-description-text">
+          Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden.
           Paprika waschen, entkernen und in dünne Streifen schneiden. Tomaten
           waschen und achteln. Zwiebeln schälen und in feine Ringe schneiden.
           Schafskäse würfeln und mit Oregano bestreuen. Oliven abgießen und mit
@@ -140,38 +159,63 @@
           verrühren und über den Salat gießen. Umrühren.
         </span>
       </section>
+      <!-- Preparation Section END -->
+
+      <!-- Recipe Owner Section START -->
       <section class="recipe-owner-info">
-        <span class="recipe-owner-info-title">Rezept erstellt von</span>
+        <h3 class="recipe-owner-info-title">Rezept erstellt von</h3>
         <div class="recipe-owner-info-img">
-          <img src="./assets/img/CV-Image .jpg" alt="profile image" />
+          <img src="./assets/img/profile.png" alt="profile image" />
           <span>Zohreh</span>
         </div>
       </section>
+      <!-- Recipe Owner Section END -->
     </main>
-    <footer>
-      <div class="footer-links">
-        <!-- <img src="./assets/img/logo_small.png" alt="logo" /> -->
-        <a href="#" class="footer-link">Datenschutz</a>
-        <a href="#" class="footer-link">Impressum</a>
-        <a href="#" class="footer-link">Nutzungsbedingungen</a>
-        <a href="#" class="footer-link">Kontakt</a>
+    <!-- MAIN CONTENT END -->
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+      <!-- Footer Container START -->
+      <div class="footer-container">
+        <!-- Unternehmen Column START -->
+        <div class="footer-column">
+          <h3>Unternehmen</h3>
+          <ul>
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">Datenschutz</a></li>
+            <li><a href="#">Werben Sie bei uns</a></li>
+          </ul>
+        </div>
+        <!-- Unternehmen Column END -->
+
+        <!-- Quicklinks Column START -->
+        <div class="footer-column">
+          <h3>Quicklinks</h3>
+          <ul>
+            <li><a href="#">Nutzungsbedingungen</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <!-- Quicklinks Column END -->
+
+        <!-- Newsletter Column START -->
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <p>Frische Inspiration direkt in dein Postfach!</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Email" />
+            <button type="submit">Anmelden</button>
+          </form>
+        </div>
+        <!-- Newsletter Column END -->
       </div>
-      <div class="Subscribe-container-form">
-        <span class="Subscribe-container-form-title"
-          >Subscribe to get latest recipes!</span
-        >
-        <form action="/" class="Subscribe-form">
-          <input
-            type="email"
-            class="Subscribe-container-form-input"
-            placeholder="Email *"
-            id="form-input-email"
-          />
-          <button type="submit" class="Subscribe-container-form-button">
-            Subscribe
-          </button>
-        </form>
-      </div>
+      <!-- Footer Container END -->
+
+      <!-- Footer Bottom START -->
+      <div class="footer-bottom">© 2026 Kochwelt</div>
+      <!-- Footer Bottom END -->
     </footer>
+    <!-- FOOTER END -->
   </body>
 </html>

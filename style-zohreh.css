@@ -1,331 +1,398 @@
-/* Apply to all elements */
-/* Remove default outer space */
-/* Remove default inner space */
-/* Include padding and border in element's total width and height */
+/* =====================
+   Reset & Base Styles
+===================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  /* outline: 1px solid red; */
 }
 body {
-  margin: 0;
   font-family: 'Raleway', sans-serif;
 }
-/* Root element settings */
-/* Base font size (usually 16px=100% in browsers) */
-/* Spacing variables for consistent gaps and margins */
-/* Heading font size variables */
+
+/* =====================
+   Root Variables
+===================== */
 :root {
   font-size: 100%;
+
+  /* Spacing */
   --space-s: 0.5rem;
   --space-m: 1rem;
   --space-l: 2rem;
   --space-xl: 4rem;
+
+  /* Heading font sizes */
   --h1: 3rem;
   --h2: 2.4rem;
   --h3: 2rem;
   --h4: 1.6rem;
   --h5: 1.3rem;
   --h6: 1rem;
-}
-/* Set font sizes for headings using predefined variables */
-h1 {
-  font-size: var(--h1);
-}
-h2 {
-  font-size: var(--h2);
-}
-h3 {
-  font-size: var(--h3);
-}
-h4 {
-  font-size: var(--h4);
-}
-h5 {
-  font-size: var(--h5);
-}
-h6 {
-  font-size: var(--h6);
-}
-/* Standard paragraph text size */
-p {
-  font-size: 1rem;
+
+  /* Colors */
+  --color-primary: #007200;
+  --color-light: #efefef;
+  --color-footer-bg-start: #3a3533;
+  --color-footer-bg-end: #2c2725;
+  --color-footer-text: #eee;
+  --color-footer-link: #ddd;
+  --color-footer-link-hover: #007200;
 }
 
-/* Set horizontal padding for navigation container */
-/* Horizontal padding (left and right) is dynamic:
-     minimum 1rem, maximum 10rem, and scales with 5% of viewport width in between */
+/* =====================
+   Headings & Paragraph
+===================== */
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+h3 { font-size: var(--h3); }
+h4 { font-size: var(--h4); }
+h5 { font-size: var(--h5); }
+h6 { font-size: var(--h6); }
+p  { font-size: 1rem; }
+
+/* =====================
+   Navigation
+===================== */
 .navigation-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0.3em 0.3em 1em rgba(211, 211, 211, 0.6);
+  box-shadow: 0.3em 0.3em 1em rgba(211,211,211,0.6);
   height: 7rem;
   padding-inline: clamp(var(--space-m), 5vw, var(--space-xl));
   position: sticky;
   padding-bottom: 3px;
-  /* top: 0;
-  z-index: 1000;
-  background-color: white; */
 }
+
 .navigation {
-  /* list-style-type: none;
+  list-style: none;
   text-decoration: none;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1.5rem;
-  padding-top: 3.5rem; 56px */
-list-style-type: none;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 1.5rem;
-    height: 100%;
+  gap: var(--space-l);
+  align-items: flex-end;
+  height: 100%;
 }
+
 .nav-logo {
-  width: auto;
-  height: 5.25rem; /* 84px */
+  height: 5.25rem;
 }
+
 .nav-link {
   text-decoration: none;
-  font-family: raleway, sans-serif;
+  font-size: 1.25rem;
   color: black;
-  font-size: 20px;
   cursor: pointer;
+  font-family: inherit;
 }
+
 .nav-link:hover {
-  color: #007200;
+  color: var(--color-primary);
   text-decoration: underline;
-  text-decoration-color: #007200;
+  text-decoration-color: var(--color-primary);
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
 }
+
+/* =====================
+   Main Container
+===================== */
 .main-container {
   display: flex;
   flex-direction: column;
   padding-inline: clamp(var(--space-m), 5vw, var(--space-xl));
-  padding-block: 5rem; /*bottom and top 80px*/
+  padding-block: var(--space-xl);
 }
+
+/* =====================
+   Title Section
+===================== */
 .title-section {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem; /* 20px */
+  gap: var(--space-m);
+  font-size: var(--h2);
 }
+
 .title-section span {
-  font-size: 2.5rem; /* 40px */
   font-weight: 600;
 }
+
 .title-section-img {
-  width: 100%;
-  height: 14.7rem; /* 235px */
-  border-radius: 0.5rem; /* 8px */
   background-image: url('./assets/img/salad.jpg');
+  width: 100%;
+  height: 14.7rem;
+  border-radius: 0.5rem;
   background-size: cover;
   background-position: center;
 }
+
 .title-section-buttons {
-  flex-wrap: wrap;
   display: flex;
-  gap: 1.25rem; /* 20px */
+  flex-wrap: wrap;
+  gap: var(--space-m);
 }
+
 .title-section-button {
-  font-family: Raleway, sans-serif;
+  font-family: inherit;
+  font-size: 1rem;
   color: black;
-  font-size: 1rem; /* 16px */
   border: 0.1rem solid white;
-  border-radius: 0.56rem; /* 9px */
-  background-color: #efefef;
-  padding: 0.31rem 0.94rem; /* 5px 15px */
+  border-radius: 0.56rem;
+  background-color: var(--color-light);
+  padding: 0.31rem 0.94rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* 8px */
+  gap: 0.5rem;
 }
+
+/* =====================
+   Divider
+===================== */
 .divider {
   border: none;
-  height: 0.125rem; /* 2px */
-  background-color: #efefef;
-  margin: 4rem 0 0.5rem 0;
+  height: 0.125rem;
+  background-color: var(--color-light);
+  margin: var(--space-xl) 0 var(--space-s) 0;
 }
+
+/* =====================
+   Ingredients Section
+===================== */
 .ingredients-section {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem; /* 20px */
-  padding-bottom: 1.5rem;
+  gap: var(--space-m);
+  padding-bottom: var(--space-l);
 }
+
 .people-count {
   display: flex;
-  flex-direction: row;
-  gap: 0.5rem; /* 8px */
-  justify-content: flex-start;
+  gap: var(--space-s);
   align-items: center;
 }
+
 .people-count-form {
   display: flex;
 }
+
 .people-count-input {
-  border: 1px solid #efefef;
+  border: 1px solid var(--color-light);
   border-radius: 0.5rem 0 0 0.5rem;
-  padding: 0.5rem;
+  padding-left: 0.5rem;
+    min-width: 8.75rem;
+  padding: var(--space-s);
 }
+
 .people-count-button {
-  background-color: #007200;
-  text-decoration: none;
+  background-color: var(--color-primary);
   color: white;
-  padding: 0.625rem 2.5rem;
+  padding: 0.625rem 2.1875rem;
   border-radius: 0 0.5rem 0.5rem 0;
-  border-width: 0;
-  font-size: 1rem;
+  border: 0;
+  font-size: 14px;
   cursor: pointer;
 }
+
 .people-count-form > * {
   height: 2.5rem;
 }
+
 .ingredients-table {
-  border-collapse: collapse; /* Make table borders collapse into a single border */
+  border-collapse: collapse;
   width: 100%;
 }
+
 .ingredients-table td {
   text-align: left;
   font-size: 1rem;
   padding: 0.8rem;
-  border-radius: 0.5rem; /* 8px */
+  border-radius: 0.5rem;
 }
+
 .ingredients-table tr:nth-child(odd) {
-  background-color: #efefef;
-} /* Color the odd rows light grey for better readability */
+  background-color: var(--color-light);
+}
+
+/* =====================
+   Preparation Section
+===================== */
 .preparation-description {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: var(--space-s);
 }
+
 .preparation-description-title {
-  font-size: 2rem; /* 40px */
+  font-size: var(--h2);
   font-weight: 600;
 }
+
 .preparation-description-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.25rem; /* 20px */
+  gap: var(--space-m);
 }
+
 .preparation-description-button {
-  font-family: Raleway, sans-serif;
+  font-family: inherit;
+  font-size: 1rem;
   color: black;
-  font-size: 1rem; /* 16px */
   border: 0.1rem solid white;
-  border-radius: 0.56rem; /* 9px */
-  background-color: #efefef;
-  padding: 0.31rem 0.94rem; /* 5px 15px */
+  border-radius: 0.56rem;
+  background-color: var(--color-light);
+  padding: 0.31rem 0.94rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* 8px */
+  gap: 0.5rem;
 }
+
 .preparation-description-text {
-  font-size: 1rem; /* 40px */
-  padding: 1rem 0 2rem 0;
+  font-size: 1rem;
+  padding-block: var(--space-m);
 }
+
+/* =====================
+   Recipe Owner
+===================== */
 .recipe-owner-info {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: var(--space-s);
 }
+
 .recipe-owner-info-title {
-  font-size: 1.1rem;
+  font-size: var(--h5);
   font-weight: 600;
 }
+
 .recipe-owner-info-img {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
-  gap: 2rem;
+  gap: var(--space-l);
 }
+
 .recipe-owner-info-img img {
   border-radius: 50%;
   width: 100px;
-  height: auto;
 }
-footer {
-  display: flex;
-  align-items: center;
-  gap: 6rem;
+
+/* =====================
+   Footer
+===================== */
+.footer {
+  background: linear-gradient(var(--color-footer-bg-start), var(--color-footer-bg-end));
+  color: var(--color-footer-text);
   padding-inline: clamp(var(--space-m), 5vw, var(--space-xl));
-  background-color: #403b3b;
-  color: white;
-  min-height: 13rem;
-}
-.footer-links {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  align-items: flex-end;
-  justify-content: flex-start;
-  gap: 1rem;
-}
-.footer-link {
-  color: white;
-}
-.Subscribe-container-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-.Subscribe-form {
-  display: flex;
-  align-items:stretch;
-  width: 100%;
+  padding-block: 4rem 1rem; /* top: 64px, bottom: 16px */
 }
 
-.Subscribe-container-form-title {
-  font-size: 24px;
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-l);
+  max-width: 1100px;
+  margin: auto;
 }
-.Subscribe-container-form-input {
-  border: 1px solid #efefef;
-  border-radius: 0.5rem 0 0 0.5rem;
-  padding: 0.5rem;
-  flex: 1;
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 220px;
 }
-.Subscribe-container-form-button {
-  background-color: #007200;
+
+.footer h3 {
+  margin-bottom: var(--space-m);
+  font-size: var(--h5);
+}
+
+.footer p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer a {
+  color: var(--color-footer-link);
   text-decoration: none;
+  transition: .3s;
+}
+
+.footer a:hover {
+  color: var(--color-footer-link-hover);
+  padding-left: 5px;
+}
+
+.subscribe-form {
+  display: flex;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: .6rem;
+  border: none;
+  outline: none;
+  min-width: 0;
+}
+
+.subscribe-form button {
+  background: var(--color-primary);
+  border: none;
+  padding: .6rem 1rem;
   color: white;
-  padding: 0.625rem 2.5rem;
-  border-width: 0;
-  font-size: 1rem;
   cursor: pointer;
-  border-radius: 0 0.5rem 0.5rem 0;
+  transition: .3s;
+  min-width: 90px;
 }
 
-/* MOBILE */
+.subscribe-form button:hover {
+  background: #005f00;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: var(--space-l);
+  font-size: .9rem;
+  color: #aaa;
+}
+
+/* =====================
+   Responsive
+===================== */
 @media (max-width: 480px) {
-  .Subscribe-form {
-    flex-direction: column;
+  .people-count {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .Subscribe-container-form-button,
-  .Subscribe-container-form-input {
-    width: 100%;
-    border-radius: 0.5rem;
-  }
-  .people-count-button {
-        padding-left: 10px;
-    padding-right: 10px;
-  }
 }
 
-/* TABLET */
-@media (max-width: 768px) {
-  footer {
-    flex-direction: column;
-    gap: 2rem;
+@media (max-width: 536px) {
+  .footer-column {
+    flex: 1 1 100%;
     text-align: center;
   }
 
-  .footer-links {
-    flex-wrap: wrap;
+  .subscribe-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 90%;
+    border-radius: 6px;
+  }
+
+  .subscribe-form button {
+    margin-top: 0.5rem;
   }
 }
