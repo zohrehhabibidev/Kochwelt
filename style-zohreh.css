@@ -44,13 +44,27 @@ body {
 /* =====================
    Headings & Paragraph
 ===================== */
-h1 { font-size: var(--h1); }
-h2 { font-size: var(--h2); }
-h3 { font-size: var(--h3); }
-h4 { font-size: var(--h4); }
-h5 { font-size: var(--h5); }
-h6 { font-size: var(--h6); }
-p  { font-size: 1rem; }
+h1 {
+  font-size: var(--h1);
+}
+h2 {
+  font-size: var(--h2);
+}
+h3 {
+  font-size: var(--h3);
+}
+h4 {
+  font-size: var(--h4);
+}
+h5 {
+  font-size: var(--h5);
+}
+h6 {
+  font-size: var(--h6);
+}
+p {
+  font-size: 1rem;
+}
 
 /* =====================
    Navigation
@@ -59,7 +73,7 @@ p  { font-size: 1rem; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0.3em 0.3em 1em rgba(211,211,211,0.6);
+  box-shadow: 0.3em 0.3em 1em rgba(211, 211, 211, 0.6);
   height: 7rem;
   padding-inline: clamp(var(--space-m), 5vw, var(--space-xl));
   position: sticky;
@@ -120,7 +134,7 @@ p  { font-size: 1rem; }
 }
 
 .title-section-img {
-  background-image: url('./assets/img/salad.jpg');
+  background-image: url('./assets/img/Nudel\ mit\ Pesto.jpg');
   width: 100%;
   height: 14.7rem;
   border-radius: 0.5rem;
@@ -181,7 +195,7 @@ p  { font-size: 1rem; }
   border: 1px solid var(--color-light);
   border-radius: 0.5rem 0 0 0.5rem;
   padding-left: 0.5rem;
-    min-width: 8.75rem;
+  min-width: 8.75rem;
   padding: var(--space-s);
 }
 
@@ -283,7 +297,10 @@ p  { font-size: 1rem; }
    Footer
 ===================== */
 .footer {
-  background: linear-gradient(var(--color-footer-bg-start), var(--color-footer-bg-end));
+  background: linear-gradient(
+    var(--color-footer-bg-start),
+    var(--color-footer-bg-end)
+  );
   color: var(--color-footer-text);
   padding-inline: clamp(var(--space-m), 5vw, var(--space-xl));
   padding-block: 4rem 1rem; /* top: 64px, bottom: 16px */
@@ -339,7 +356,7 @@ p  { font-size: 1rem; }
 
 .subscribe-form input {
   flex: 1;
-  padding: .6rem;
+  padding: 0.6rem;
   border: none;
   outline: none;
   min-width: 0;
@@ -348,21 +365,21 @@ p  { font-size: 1rem; }
 .subscribe-form button {
   background: var(--color-primary);
   border: none;
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
   color: white;
   cursor: pointer;
   transition: transform 100ms ease, color 100ms ease;
   min-width: 90px;
 }
 
- #button-hover:hover {
+#button-hover:hover {
   background: #005f00;
 }
 
 .footer-bottom {
   text-align: center;
   margin-top: var(--space-l);
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #aaa;
 }
 
@@ -374,7 +391,14 @@ p  { font-size: 1rem; }
     display: flex;
     flex-wrap: wrap;
   }
-
+  :root {
+    --h1: 2rem;
+    --h2: 1.6rem;
+    --h3: 1.4rem;
+    --h4: 1.2rem;
+    --h5: 1rem;
+    --h6: 0.9rem;
+  }
 }
 
 @media (max-width: 536px) {
