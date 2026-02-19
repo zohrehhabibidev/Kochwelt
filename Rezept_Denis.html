@@ -15,9 +15,21 @@
 
 
     <script>
-        function toggleRespMenu(){
-            document.getElementById("resp_menu").classList.toggle('resp_menu_closed')
-        }
+    function toggleRespMenu(){
+    document.getElementById("resp_menu")
+        .classList.toggle("resp_menu_closed");
+    }
+    </script>
+
+    <script>
+    function closeMenu(){
+        // Menü schließen
+        document.getElementById("resp_menu")
+            .classList.add("resp_menu_closed");
+
+        // Checkbox zurücksetzen → X wird wieder zu 3 Linien
+        document.getElementById("hamburg").checked = false;
+    }
     </script>
 
 </head>
@@ -39,21 +51,22 @@
                 </nav>
 
 
-                <nav id="resp_menu" class="navTabletPhone resp_menu_box resp_menu_closed" onclick="toggleRespMenu()">
-                    <a href="#">Start</a>
-                    <a href="#">Rezept des Tages</a>
-                    <a href="#">Kontakt</a>
-                    <a href="#">Impressum</a>
+                <nav id="resp_menu" class="navTabletPhone resp_menu_box resp_menu_closed">
+                    <a href="#" onclick="closeMenu()">Start</a>
+                    <a href="#" onclick="closeMenu()">Rezept des Tages</a>
+                    <a href="#" onclick="closeMenu()">Kontakt</a>
+                    <a href="#" onclick="closeMenu()">Impressum</a>
                 </nav>
 
-                    <div class="burgerMenu">
-                        <input type="checkbox" id="hamburg" onclick="toggleRespMenu()">
-                        <label for="hamburg" class="hamburg">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                        </label>
-                    </div>
+                <div class="burgerMenu">
+                    <input type="checkbox" id="hamburg" onclick="toggleRespMenu()">
+                    <label for="hamburg" class="hamburg">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </label>
+                </div>
+
             
 
         </header>
