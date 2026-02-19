@@ -36,140 +36,152 @@
 <body>
 
     <div class="content">
-        <header>
 
+        <!-- HEADER -->
+         <section class="headerDesignFullLength">
             
-                <img class="logoDesktop" src="./img/logo.png" style="height: 96px; width: auto;">
-
-                <img class="logoMobile" src="./img/logo_small.png" style="height: 64px; width: auto;">
-
-                <nav class="navDesktop">
-                    <a href="#">Start</a>
-                    <a href="#">Rezept des Tages</a>
-                    <a href="#">Kontakt</a>
-                    <a href="#">Impressum</a>
-                </nav>
-
-
-                <nav id="resp_menu" class="navTabletPhone resp_menu_box resp_menu_closed">
-                    <a href="#" onclick="closeMenu()">Start</a>
-                    <a href="#" onclick="closeMenu()">Rezept des Tages</a>
-                    <a href="#" onclick="closeMenu()">Kontakt</a>
-                    <a href="#" onclick="closeMenu()">Impressum</a>
-                </nav>
-
-                <div class="burgerMenu">
-                    <input type="checkbox" id="hamburg" onclick="toggleRespMenu()">
-                    <label for="hamburg" class="hamburg">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                    </label>
-                </div>
-
-            
-
-        </header>
-    
-    
-    <section class="sectionRecepiHeader">
-
-            <h2>
-                Griechsicher Bauernsalat
-            </h2>
-
-            <img src="./img/salad.jpg">
-
-            <div class="recepiStats">
-
-                <div class="recepiStatsBox">
-                    <img src="./img/icons/clock-regular.svg">
-                    <span>15 Min.</span>
-                </div>
-
-                <div class="recepiStatsBox">
-                    <img src="./img/icons/brain-solid.svg">
-                    <span>simpel</span>
-                </div>
-
-                <div class="recepiStatsBox">
-                    <img src="./img/icons/calendar-alt-regular.svg">
-                    <span>20.09.2020</span>
-                </div>
-
-            </div>
-
-    </section>
-
-    <section class="sectionRecepi"> 
-        <div class="sectionRecepiContent">
-            <div class="borderLine">
-            </div>
-
-            <div class="amountPeople">
-                <label>Zutaten für</label>
-                <form class="inputAmount">
-                    <input type="number" value="4" min="1" max="12">
-                    <button>Portionen</button>
-                </form>
-            </div>
-
-
-            <div class="listIngredients">
-                <ul>
-                    <li class="listEven">1 Salzgurke (n)</li>
-                    <li class="listOdd">2 Paprikaschote (n), rot und grün</li>
-                    <li class="listEven">500g Tomate (n)</li>
-                    <li class="listOdd">2 Zwiebel (n)</li>
-                    <li class="listEven">200g Schafskäse (n)</li>
-                    <li class="listOdd">1 Glas Oliven, schwarze, ca 100g</li>
-                    <li class="listEven">Salz und Pfeffer</li>
-                    <li class="listOdd">1 Zitrone(n)</li>
-                    <li class="listEven">125ml Olivenol</li>
-                    <li class="listOdd">Oregano</li>
-                </ul>
-
-            </div>
-
         </section>
+        <section class="maxWidth">
+            <header>
 
-        <section class="sectionPreperation">
-            <h3>Zubereitung</h3>
+                
+                    <img class="logoDesktop" src="./img/logo.png" style="height: 96px; width: auto;">
 
-            <div class="recepiStats">
+                    <img class="logoMobile" src="./img/logo_small.png" style="height: 64px; width: auto;">
 
-                <div class="recepiStatsBox">
-                    <img src="./img/icons/clock-regular.svg">
-                    <span>ca. 15 Min.</span>
-                </div>
-
-                <div class="recepiStatsBox">
-                    <img src="./img/icons/clock-regular.svg">
-                    <span>Gesamtzeit ca. 15 Minuten </span>
-                </div>
-
-            </div>
-
-            <p class="recepiDescription">
-                Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden. Paprika waschen, entkernen und 
-                in dünne Streifen schneiden. Tomaten waschen und achteln. Zwiebeln schälen und in feine Ringe schneiden. 
-                Schafskäse würfeln und mit Oregano bestreuen. Oliven abgießen und mit Gurke, Paprika, Tomaten, Zwiebeln 
-                und Schafskäse in eine Schüssel geben. Olivenöl, Zitronensaft, Salz und Pfeffer zu einer Sauce verrühren 
-                und über den Salat gießen. Umrühren.
-            </p>
+                    <nav class="navDesktop">
+                        <a href="#">Start</a>
+                        <a href="#">Rezept des Tages</a>
+                        <a href="#">Kontakt</a>
+                        <a href="#">Impressum</a>
+                    </nav>
 
 
-            
-            <h4>Rezept erstellt von</h4>
+                    <nav id="resp_menu" class="navTabletPhone resp_menu_box resp_menu_closed">
+                        <a href="#" onclick="closeMenu()">Start</a>
+                        <a href="#" onclick="closeMenu()">Rezept des Tages</a>
+                        <a href="#" onclick="closeMenu()">Kontakt</a>
+                        <a href="#" onclick="closeMenu()">Impressum</a>
+                    </nav>
 
-            <div class="recepiOwner">
-                <img src="./img/profile.png">
-                <h5>Junus</h5>
-            </div>
+                    <div class="burgerMenu">
+                        <input type="checkbox" id="hamburg" onclick="toggleRespMenu()">
+                        <label for="hamburg" class="hamburg">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </label>
+                    </div>
 
+                
+
+            </header>
+        </section>
+        
+        <section class="maxWidth">
+            <main>
+                <section class="sectionRecepiHeader">
+
+                        <h2>
+                            Griechsicher Bauernsalat
+                        </h2>
+
+                        <img src="./img/salad.jpg">
+
+                        <div class="recepiStats">
+
+                            <div class="recepiStatsBox">
+                                <img src="./img/icons/clock-regular.svg">
+                                <span>15 Min.</span>
+                            </div>
+
+                            <div class="recepiStatsBox">
+                                <img src="./img/icons/brain-solid.svg">
+                                <span>simpel</span>
+                            </div>
+
+                            <div class="recepiStatsBox">
+                                <img src="./img/icons/calendar-alt-regular.svg">
+                                <span>20.09.2020</span>
+                            </div>
+
+                        </div>
+
+                </section>
+
+                <section class="sectionRecepi"> 
+                <div class="sectionRecepiContent">
+                    <div class="borderLine">
+                    </div>
+
+                    <div class="amountPeople">
+                        <label>Zutaten für</label>
+                        <form class="inputAmount">
+                            <input type="number" value="4" min="1" max="12">
+                            <button>Portionen</button>
+                        </form>
+                    </div>
+
+
+                    <div class="listIngredients">
+                        <ul>
+                            <li class="listEven">1 Salzgurke (n)</li>
+                            <li class="listOdd">2 Paprikaschote (n), rot und grün</li>
+                            <li class="listEven">500g Tomate (n)</li>
+                            <li class="listOdd">2 Zwiebel (n)</li>
+                            <li class="listEven">200g Schafskäse (n)</li>
+                            <li class="listOdd">1 Glas Oliven, schwarze, ca 100g</li>
+                            <li class="listEven">Salz und Pfeffer</li>
+                            <li class="listOdd">1 Zitrone(n)</li>
+                            <li class="listEven">125ml Olivenol</li>
+                            <li class="listOdd">Oregano</li>
+                        </ul>
+
+                    </div>
+
+                </section>
+
+                <section class="sectionPreperation">
+                    <h3>Zubereitung</h3>
+
+                    <div class="recepiStats">
+
+                        <div class="recepiStatsBox">
+                            <img src="./img/icons/clock-regular.svg">
+                            <span>ca. 15 Min.</span>
+                        </div>
+
+                        <div class="recepiStatsBox">
+                            <img src="./img/icons/clock-regular.svg">
+                            <span>Gesamtzeit ca. 15 Minuten </span>
+                        </div>
+
+                    </div>
+
+                    <p class="recepiDescription">
+                        Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden. Paprika waschen, entkernen und 
+                        in dünne Streifen schneiden. Tomaten waschen und achteln. Zwiebeln schälen und in feine Ringe schneiden. 
+                        Schafskäse würfeln und mit Oregano bestreuen. Oliven abgießen und mit Gurke, Paprika, Tomaten, Zwiebeln 
+                        und Schafskäse in eine Schüssel geben. Olivenöl, Zitronensaft, Salz und Pfeffer zu einer Sauce verrühren 
+                        und über den Salat gießen. Umrühren.
+                    </p>
+
+
+                    
+                    <h4>Rezept erstellt von</h4>
+
+                    <div class="recepiOwner">
+                        <img src="./img/profile.png">
+                        <h5>Junus</h5>
+                    </div>
+
+                </section>
+            </main>
         </section>
 
     </div>
+
+
     <section class="sectionFooter">
 
 
