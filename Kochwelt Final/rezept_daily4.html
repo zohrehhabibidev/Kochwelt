@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="rezept_daily.css">
+    <link rel="icon" href="../assets/img/logo_small.png" type="imgage/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script>
+        function toggleRespMenu() {
+            document.getElementById("resp_menu").classList.toggle('resp_menu_closed')
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        function toggleRespMenu() {
+            document.getElementById("resp_menu")
+                .classList.toggle("resp_menu_closed");
+        }
+    </script>
+
+    <script>
+        function closeMenu() {
+            // Menü schließen
+            document.getElementById("resp_menu")
+                .classList.add("resp_menu_closed");
+
+            // Checkbox zurücksetzen → X wird wieder zu 3 Linien
+            document.getElementById("hamburg").checked = false;
+        }
+    </script>
+
+    </head>
+
+    <body>
+
+        <div class="content">
+
+            <!-- HEADER -->
+            <section class="headerDesignFullLength">
+
+            </section>
+            <section class="maxWidth">
+                <header>
+
+
+                    <a href="index.html"><img class="logoDesktop" src="../assets/img/logo.png"
+                            style="height: 96px; width: auto;"></a>
+
+                    <a href="index.html"><img class="logoMobile" src="../assets/img/logo_small.png"
+                            style="height: 64px; width: auto;"></a>
+
+                    <nav class="navDesktop">
+                        <a href="index.html">Start</a>
+                        <a href="rezept_daily2.html">Rezept des Tages</a>
+                        <a href="contact.html">Kontakt</a>
+                        <a href="impressum.html">Impressum</a>
+                    </nav>
+
+
+                    <nav id="resp_menu" class="navTabletPhone resp_menu_box resp_menu_closed">
+                        <a href="index.html" onclick="closeMenu()">Start</a>
+                        <a href="rezept_daily2.html" onclick="closeMenu()">Rezept des Tages</a>
+                        <a href="contact.html" onclick="closeMenu()">Kontakt</a>
+                        <a href="impressum.html" onclick="closeMenu()">Impressum</a>
+                    </nav>
+
+                    <div class="burgerMenu">
+                        <input type="checkbox" id="hamburg" onclick="toggleRespMenu()">
+                        <label for="hamburg" class="hamburg">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </label>
+                    </div>
+
+
+
+                </header>
+            </section>
+
+            <!-- =====================
+         MAIN CONTENT START
+    ====================== -->
+            <main class="main-container">
+                <!-- Title Section START -->
+                <section class="title-section">
+                    <h1>Der beste Pizzateig</h1>
+                    <div class="title-section-img4"></div>
+                    <div class="title-section-buttons">
+                        <!-- Info Buttons: Time, Difficulty, Date -->
+
+                        <button class="title-section-button">
+                            <img src="../assets/img/icons/clock-regular.svg" width="15" height="auto"
+                                alt="clock image" />
+                            30 Min.
+                        </button>
+                        <button class="title-section-button">
+                            <img src="../assets/img/icons/brain-solid.svg" width="15" height="auto" alt="brain image" />
+                            simpel
+                        </button>
+                        <button class="title-section-button">
+                            <img src="../assets/img/icons/calendar-alt-regular.svg" width="15" height="auto"
+                                alt="calendar image" />
+                            12.02.1991
+                        </button>
+                    </div>
+                </section>
+                <!-- Title Section END -->
+
+                <hr class="divider" />
+
+                <!-- Ingredients Section START -->
+                <section class="ingredients-section">
+                    <!-- People Count Form START -->
+                    <form class="people-count">
+                        <label for="people-count" class="people-count-label">Zutaten für</label>
+                        <div class="people-count-form">
+                            <input type="number" id="people-count" min="0" max="4" class="people-count-input"
+                                placeholder="Number of people" />
+                            <button class="people-count-button" id="button-hover" type="submit">
+                                Portionen
+                            </button>
+                        </div>
+                    </form>
+                    <!-- People Count Form END -->
+
+                    <!-- Ingredients Table START -->
+                    <table class="ingredients-table">
+                        <th>Für den Hefeteig:</th>
+                        <tr>
+                            <td>500g Weizenmehl</td>
+                        </tr>
+                        <tr>
+                            <td>300ml Wasser</td>
+                        </tr>
+                        <tr>
+                            <td>2TL Salz</td>
+                        </tr>
+                        <tr>
+                            <td>5g Frischhefe</td>
+                        </tr>
+                        <th>Für die Sauce:</th>
+                        <tr>
+                            <td>1 Dose (n) Pizzatomaten</td>
+                        </tr>
+                        <tr>
+                            <td>Salz und Pfeffer</td>
+                        </tr>
+                        <tr>
+                            <td>etwas Zucker</td>
+                        </tr>
+                        <tr>
+                            <td>Basilikum</td>
+                        </tr>
+                        <tr>
+                            <td>Oregano</td>
+                        </tr>
+                    </table>
+                    <!-- Ingredients Table END -->
+                </section>
+                <!-- Ingredients Section END -->
+
+                <!-- Preparation Section START -->
+                <section class="preparation-description">
+                    <h2 class="preparation-description-title">Zubereitung</h2>
+                    <div class="preparation-description-buttons">
+                        <button class="preparation-description-button">
+                            <img src="../assets/img/icons/clock-regular.svg" width="15" height="auto"
+                                alt="clock image" />
+                            ca. 30 Minuten
+                        </button>
+                        <button class="preparation-description-button">
+                            <img src="../assets/img/icons/clock-regular.svg" width="15" height="auto"
+                                alt="clock image" />
+                            Gesamtzeit ca. 8 Std. 34 Minuten
+                        </button>
+                    </div>
+                    <span class="preparation-description-text">
+                        Zunächst das Mehl mit dem Salz sieben und es in eine Teigrührmaschine oder einen
+                        Brotbackautomaten
+                        mit Teigfunktion füllen.
+                        Nun die Hefe in dem lauwarmen Wasser auflösen und anschließend zum Mehl-Salz-Gemisch geben.</p>
+                        <p>Anschließend die Zutaten in 20 (!) Minuten zu einem elastischen, homogenen Teig verkneten.
+                            Anmerkung: Eine elektrische Hilfe ist hier fast schon Pflicht, zur Not tut es auch ein
+                            Handrührgerät
+                            mit Knethaken.
+                            Bitte nicht verzweifelt mit der bloßen Hand kneten, der Teig erreicht so einfach nicht die
+                            gewünschte Weichheit und Konsistenz.</p>
+                        <p>Nach dem Kneten den Teig mit einem feuchten Tuch abdecken und zwei Stunden ruhen lassen.
+                            Anschließend
+                            in vier Stücke zu je 200 g teilen,
+                            diese zu Kugeln formen und wieder abgedeckt weitere sechs Stunden gehen lassen.</p>
+                        <p>Abschließend noch ein paar Tipps für weitere Verarbeitung:
+                            Den Teig so dünn wie möglich ausrollen oder ziehen! Alles unter 4 mm ist ideal.</p>
+                        <p>Für die Tomatensoße einfach eine Dose Schältomaten mit (viel) Knoblauch, Salz, Pfeffer, etwas
+                            Zucker,
+                            Basilikum und Oregano kalt pürieren, nicht kochen. Anschließend mittig auf die Pizza
+                            auftragen
+                            und in kreisrunden Bewegungen mit der Kelle über die komplette Pizza verteilen. Nicht zu
+                            viel
+                            auftragen!
+                            Eine gute Pizza sollte man nicht in Tomatensoße ertränken.
+                            Wenn einzelne Teigbereiche keine Soße abbekommen, macht das überhaupt nichts. Lieber etwas
+                            weniger
+                            als etwas mehr.</p>
+                        <p>Den Backofen auf Höchststufe vorheizen! Meiner schafft knapp 260 °C, das Ergebnis war super.
+                            Den Teig
+                            auf das heiße Backblech legen
+                            (mit Backpapier ist das einfacher) und bereits nach 3 - 4 Minuten ist die Pizza fertig und
+                            kann
+                            genossen werden</p>
+                </section>
+                <!-- Preparation Section END -->
+
+                <!-- Recipe Owner Section START -->
+                <section class="recipe-owner-info">
+                    <h3 class="recipe-owner-info-title">Rezept erstellt von</h3>
+                    <div class="recipe-owner-info-img">
+                        <img src="../assets/img/profile.png" alt="profile image" />
+                        <span>Kevin</span>
+                    </div>
+                </section>
+                <!-- Recipe Owner Section END -->
+            </main>
+            <!-- MAIN CONTENT END -->
+
+            <!-- =====================
+         FOOTER START
+    ====================== -->
+            <footer>
+                <div class="footer">
+                    <!-- Upper Row: Logo, Links, Icons -->
+                    <div class="footer-top">
+                        <div class="footer-left">
+                            <a href="index.html"><img src="../assets/img/logo_small.png" alt="Logo"
+                                    class="footer-logo" /></a>
+                        </div>
+                        <!-- Footer Navigation Links -->
+                        <div class="footer-nav">
+                            <div class="active footer-link">
+                                <a href="impressum.html">Impressum</a>
+                            </div>
+                            <div class="footer-link">
+                                <a href="datenschutz.html">Datenschutz</a>
+                            </div>
+                            <div class="footer-link"><a href="contact.html">Kontakt</a></div>
+                            <div class="footer-link"><a href="rezept_daily1.html">Rezept</a></div>
+                        </div>
+                        <!-- Social Icons -->
+                        <div class="footer-right">
+                            <a href="https://www.facebook.com" target="_blank"><img
+                                    src="../assets/img/facebook_white.png" id="Facebook-img" alt="Facebook" /></a>
+                            <a href="https://www.instagram.com" target="_blank"><img
+                                    src="../assets/img/instagram_white.png" alt="Instagram" /></a>
+                            <a href="https://twitter.com" target="_blank"><img src="../assets/img/twitter_white.png"
+                                    alt="Twitter" /></a>
+                        </div>
+                    </div>
+                    <!-- Bottom Row: Copyright -->
+                    <div class="footer-bottom">© 2026 Kochwelt</div>
+                </div>
+            </footer>
+            <!-- FOOTER END -->
+    </body>
+
+</html>

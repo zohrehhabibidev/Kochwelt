@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../assets/img/logo_small.png" type="imgage/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script>
+        function toggleRespMenu() {
+            document.getElementById("resp_menu").classList.toggle('resp_menu_closed')
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        function toggleRespMenu() {
+            document.getElementById("resp_menu")
+                .classList.toggle("resp_menu_closed");
+        }
+    </script>
+
+    <script>
+        function closeMenu() {
+            // Menü schließen
+            document.getElementById("resp_menu")
+                .classList.add("resp_menu_closed");
+
+            // Checkbox zurücksetzen → X wird wieder zu 3 Linien
+            document.getElementById("hamburg").checked = false;
+        }
+    </script>
+
+    </head>
+
+    <body>
+
+        <div class="content">
+
+            <!-- HEADER -->
+            <section class="headerDesignFullLength">
+
+            </section>
+            <section class="maxWidth">
+                <header>
+
+
+                    <a href="index.html"><img class="logoDesktop" src="../assets/img/logo.png"
+                            style="height: 96px; width: auto;"></a>
+
+                    <a href="index.html"><img class="logoMobile" src="../assets/img/logo_small.png"
+                            style="height: 64px; width: auto;"></a>
+
+                    <nav class="navDesktop">
+                        <a href="index.html">Start</a>
+                        <a href="rezept_daily2.html">Rezept des Tages</a>
+                        <a href="contact.html">Kontakt</a>
+                        <a href="impressum.html">Impressum</a>
+                    </nav>
+
+
+                    <nav id="resp_menu" class="navTabletPhone resp_menu_box resp_menu_closed">
+                        <a href="index.html" onclick="closeMenu()">Start</a>
+                        <a href="rezept_daily2.html" onclick="closeMenu()">Rezept des Tages</a>
+                        <a href="contact.html" onclick="closeMenu()">Kontakt</a>
+                        <a href="impressum.html" onclick="closeMenu()">Impressum</a>
+                    </nav>
+
+                    <div class="burgerMenu">
+                        <input type="checkbox" id="hamburg" onclick="toggleRespMenu()">
+                        <label for="hamburg" class="hamburg">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </label>
+                    </div>
+
+
+
+                </header>
+            </section>
+
+            <body>
+
+                <h1>Impressum</h1>
+
+                <h2>Angaben gemäß § 5 TMG</h2>
+                <p>
+                    Max Mustermann<br>
+                    Musterstraße 12<br>
+                    12345 Musterstadt<br>
+                    Deutschland
+                </p>
+
+                <h2>Kontakt</h2>
+                <p>
+                    E-Mail: max.mustermann@example.de
+                </p>
+
+                <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+                <p>
+                    Max Mustermann<br>
+                    Anschrift wie oben
+                </p>
+
+                <h2>Haftung für Inhalte</h2>
+                <p>
+                    Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
+                    allgemeinen Gesetzen verantwortlich.
+                    Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder
+                    gespeicherte fremde Informationen
+                    zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+                </p>
+
+                <h2>Haftung für Links</h2>
+                <p>
+                    Mein Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe.
+                    Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen.
+                    Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten
+                    verantwortlich.
+                </p>
+
+                <h2>Urheberrecht</h2>
+                <p>
+                    Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
+                    deutschen Urheberrecht.
+                    Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des
+                    Urheberrechtes
+                    bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+                </p>
+                <!-- =====================
+                FOOTER START
+                ====================== -->
+                <footer>
+                    <div class="footer">
+                        <!-- Upper Row: Logo, Links, Icons -->
+                        <div class="footer-top">
+                            <div class="footer-left">
+                                <a href="index.html"><img src="../assets/img/logo_small.png" alt="Logo"
+                                        class="footer-logo" /></a>
+                            </div>
+                            <!-- Footer Navigation Links -->
+                            <div class="footer-nav">
+                                <div class="active footer-link">
+                                    <a href="impressum.html">Impressum</a>
+                                </div>
+                                <div class="footer-link">
+                                    <a href="datenschutz.html">Datenschutz</a>
+                                </div>
+                                <div class="footer-link"><a href="contact.html">Kontakt</a></div>
+                                <div class="footer-link"><a href="rezept_daily1.html">Rezept</a></div>
+                            </div>
+                            <!-- Social Icons -->
+                            <div class="footer-right">
+                                <a href="https://www.facebook.com" target="_blank"><img
+                                        src="../assets/img/facebook_white.png" id="Facebook-img" alt="Facebook" /></a>
+                                <a href="https://www.instagram.com" target="_blank"><img
+                                        src="../assets/img/instagram_white.png" alt="Instagram" /></a>
+                                <a href="https://twitter.com" target="_blank"><img src="../assets/img/twitter_white.png"
+                                        alt="Twitter" /></a>
+                            </div>
+                        </div>
+                        <!-- Bottom Row: Copyright -->
+                        <div class="footer-bottom">© 2026 Kochwelt</div>
+                    </div>
+                </footer>
+                <!-- FOOTER END -->
+            </body>
+
+</html>
