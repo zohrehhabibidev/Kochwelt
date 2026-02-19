@@ -1,5 +1,6 @@
 /* =====================
-   Reset & Base Styles
+   GLOBAL STYLES
+   Reset + Base + Variables
 ===================== */
 * {
   margin: 0;
@@ -8,12 +9,13 @@
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif; /* main font for the site */
 }
 
 /* =====================
    Root Variables
 ===================== */
+/* Design Variables (colors, spacing, typography) */
 :root {
   font-size: 100%;
 
@@ -32,13 +34,12 @@ body {
   --h6: 1rem;
 
   /* Colors */
-  --color-primary: #007200;
-  --color-light: #efefef;
-  --color-footer-bg-start: #3a3533;
-  --color-footer-bg-end: #2c2725;
-  --color-footer-text: #eee;
-  --color-footer-link: #ddd;
-  --color-footer-link-hover: #007200;
+  --color-text: #000;
+  --color-white: #fff;
+  --color-primary: #007200; /* main green */
+  --color-hover: #025f02; /* hover green */
+  --color-light: #efefef; /* light backgrounds, tables, buttons, input, divider */
+  --color-footer-bg: #342f2d; /* footer background */
 }
 
 /* =====================
@@ -73,16 +74,15 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0.3em 0.3em 1em rgba(211, 211, 211, 0.6);
+  box-shadow: 0.3em 0.3em 1em rgba(211, 211, 211, 0.6); /* subtle shadow */
   height: 7rem;
   padding-inline: clamp(var(--space-m), 5vw, var(--space-xl));
   position: sticky;
-  padding-bottom: 3px;
+  padding-bottom: var(--space-s);
 }
 
 .navigation {
   list-style: none;
-  text-decoration: none;
   display: flex;
   gap: var(--space-l);
   align-items: flex-end;
@@ -96,7 +96,7 @@ p {
 .nav-link {
   text-decoration: none;
   font-size: 1.25rem;
-  color: black;
+  color: var(--color-text);
   cursor: pointer;
   transition: transform 100ms ease, color 100ms ease;
 }
@@ -119,13 +119,13 @@ p {
   padding-block: var(--space-xl);
 }
 
-/* =====================
-   Title Section
-===================== */
+/* Title Section */
 .title-section {
   display: flex;
   flex-direction: column;
   gap: var(--space-m);
+}
+.title-section h1 {
   font-size: var(--h2);
 }
 
@@ -151,11 +151,11 @@ p {
 .title-section-button {
   font-family: inherit;
   font-size: 1rem;
-  color: black;
-  border: 0.1rem solid white;
+  color: var(--color-text);
+  border: 0.1rem solid var(--color-white);
   border-radius: 0.56rem;
-  background-color: var(--color-light);
-  padding: 0.31rem 0.94rem;
+  background-color: var(--color-light); /* light button bg */
+  padding: var(--space-s) var(--space-m);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -194,18 +194,18 @@ p {
 .people-count-input {
   border: 1px solid var(--color-light);
   border-radius: 0.5rem 0 0 0.5rem;
-  padding-left: 0.5rem;
   min-width: 8.75rem;
   padding: var(--space-s);
 }
 
 .people-count-button {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-white);
+
   padding: 0.625rem 2.1875rem;
   border-radius: 0 0.5rem 0.5rem 0;
   border: 0;
-  font-size: 14px;
+  font-size: var(--h6);
   cursor: pointer;
   transition: transform 100ms ease, color 100ms ease;
 }
@@ -214,6 +214,7 @@ p {
   height: 2.5rem;
 }
 
+/* Ingredients table */
 .ingredients-table {
   border-collapse: collapse;
   width: 100%;
@@ -222,12 +223,12 @@ p {
 .ingredients-table td {
   text-align: left;
   font-size: 1rem;
-  padding: 0.8rem;
+  padding: var(--space-s);
   border-radius: 0.5rem;
 }
 
 .ingredients-table tr:nth-child(odd) {
-  background-color: var(--color-light);
+  background-color: var(--color-light); /* light row background */
 }
 
 /* =====================
@@ -253,11 +254,11 @@ p {
 .preparation-description-button {
   font-family: inherit;
   font-size: 1rem;
-  color: black;
-  border: 0.1rem solid white;
+  color: var(--color-text);
+  border: 0.1rem solid var(--color-white);
   border-radius: 0.56rem;
-  background-color: var(--color-light);
-  padding: 0.31rem 0.94rem;
+  background-color: var(--color-light); /* light button bg */
+  padding: var(--space-s) var(--space-m);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -290,97 +291,109 @@ p {
 
 .recipe-owner-info-img img {
   border-radius: 50%;
-  width: 100px;
+  width: 6.25rem;
 }
 
 /* =====================
    Footer
 ===================== */
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer {
-  background: linear-gradient(
-    var(--color-footer-bg-start),
-    var(--color-footer-bg-end)
-  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-footer-bg);
   color: var(--color-footer-text);
   padding-inline: clamp(var(--space-m), 5vw, var(--space-xl));
-  padding-block: 4rem 1rem; /* top: 64px, bottom: 16px */
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
+  padding-block: 3rem 1rem;
   gap: var(--space-l);
-  max-width: 1100px;
-  margin: auto;
 }
 
-.footer-column {
-  flex: 1 1 220px;
-  min-width: 220px;
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.footer h3 {
-  margin-bottom: var(--space-m);
-  font-size: var(--h5);
+/* Footer Logo */
+.footer-left img.footer-logo {
+  max-height: 60px;
+  width: auto;
 }
 
-.footer p {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
+/* Footer Navigation links  */
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: var(--color-white);
+  height: 2.5rem;
+  padding: 0 10px;
 }
 
-.footer ul {
-  list-style: none;
-  padding: 0;
+.footer-link {
+  flex: 1;
+  text-align: center;
 }
 
-.footer a {
-  color: var(--color-footer-link);
-  text-decoration: none;
+.footer-link a {
   display: inline-block;
+  padding: var(--space-s) var(--space-m);
+  text-decoration: none;
+  color: var(--color-text);
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s, transform 100ms ease;
+  border-radius: 0.5rem;
+}
+
+.footer-link a:hover {
+  background-color: var(--color-hover);
+  color: var(--color-white);
+}
+
+/* Social Icons */
+.footer-right {
+  display: flex;
+  gap: var(--space-s);
+}
+.footer-right a img {
+  width: auto;
+  height: 24px;
   transition: transform 100ms ease, color 100ms ease;
 }
 
-.footer a:hover {
-  color: var(--color-footer-link-hover);
+.footer-right a:hover img {
   transform: scale(1.2);
 }
-
-.subscribe-form {
-  display: flex;
-  overflow: hidden;
-  border-radius: 6px;
-  margin-top: 0.5rem;
-}
-
-.subscribe-form input {
-  flex: 1;
-  padding: 0.6rem;
-  border: none;
-  outline: none;
-  min-width: 0;
-}
-
-.subscribe-form button {
-  background: var(--color-primary);
-  border: none;
-  padding: 0.6rem 1rem;
-  color: white;
-  cursor: pointer;
+#Facebook-img {
+  width: 18px;
+  height: 24px;
   transition: transform 100ms ease, color 100ms ease;
-  min-width: 90px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  width: 100%;
+  padding-top: var(--space-m);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+  color: var(--color-light);/* light color for Copyright  */
 }
 
 #button-hover:hover {
-  background: #005f00;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: var(--space-l);
-  font-size: 0.9rem;
-  color: #aaa;
+  background: var(--color-hover);
 }
 
 /* =====================
@@ -399,26 +412,28 @@ p {
     --h5: 1rem;
     --h6: 0.9rem;
   }
-}
-
-@media (max-width: 536px) {
-  .footer-column {
-    flex: 1 1 100%;
-    text-align: center;
-  }
-
-  .subscribe-form {
+  .footer-nav {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: var(--color-white);
+    height: 100%;
+    width: 8.5rem;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
-  .subscribe-form input,
-  .subscribe-form button {
-    width: 90%;
-    border-radius: 6px;
-  }
-
-  .subscribe-form button {
-    margin-top: 0.5rem;
+  .footer-nav {
+    justify-content: center;
+    gap: 0.5rem;
   }
 }

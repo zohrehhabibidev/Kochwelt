@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rezept</title>
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style-zohreh.css" />
+    <!-- Favicon -->
     <link rel="icon" href="./assets/img/logo_small.png" type="imgage/png" />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +17,9 @@
     />
   </head>
   <body>
-    <!-- HEADER START -->
+    <!-- =====================
+         HEADER START
+    ====================== -->
     <header class="navigation-container">
       <!-- Logo -->
       <img src="./assets/img/logo.png" class="nav-logo" alt="logo" />
@@ -28,13 +33,17 @@
     </header>
     <!-- HEADER END -->
 
-    <!-- MAIN CONTENT START -->
+    <!-- =====================
+         MAIN CONTENT START
+    ====================== -->
     <main class="main-container">
       <!-- Title Section START -->
       <section class="title-section">
         <h1>Mediterraner Nudelsalat mit Pesto</h1>
         <div class="title-section-img"></div>
         <div class="title-section-buttons">
+          <!-- Info Buttons: Time, Difficulty, Date -->
+
           <button class="title-section-button">
             <img
               src="./assets/img/icons/clock-regular.svg"
@@ -103,19 +112,19 @@
             <td>150g Cherrytomate(n)</td>
           </tr>
           <tr>
-            <td>40–60g Blattsalat</td>
+            <td>40-60g Blattsalat</td>
           </tr>
           <tr>
             <td>1 EL Olivenöl (n)</td>
           </tr>
           <tr>
-            <td>1–2 TL Zitronensaft</td>
+            <td>1-2 TL Zitronensaft</td>
           </tr>
           <tr>
             <td>Salz und Pfeffer</td>
           </tr>
           <tr>
-            <td>20–30 g Parmesan(n)</td>
+            <td>20-30 g Parmesan(n)</td>
           </tr>
         </table>
         <!-- Ingredients Table END -->
@@ -169,48 +178,50 @@
     </main>
     <!-- MAIN CONTENT END -->
 
-    <!-- FOOTER START -->
-    <footer class="footer">
-      <!-- Footer Container START -->
-      <div class="footer-container">
-        <!-- Unternehmen Column START -->
-        <div class="footer-column">
-          <h3>Unternehmen</h3>
-          <ul>
-            <li><a href="#">Impressum</a></li>
-            <li><a href="#">Datenschutz</a></li>
-            <li><a href="#">Werben Sie bei uns</a></li>
-          </ul>
+    <!-- =====================
+         FOOTER START
+    ====================== -->
+    <footer>
+      <div class="footer">
+        <!-- Upper Row: Logo, Links, Icons -->
+        <div class="footer-top">
+          <div class="footer-left">
+            <img
+              src="./assets/img/logo_small.png"
+              alt="Logo"
+              class="footer-logo"
+            />
+          </div>
+          <!-- Footer Navigation Links -->
+          <div class="footer-nav">
+            <div class="active footer-link">
+              <a href="#Impressum">Impressum</a>
+            </div>
+            <div class="footer-link">
+              <a href="#Datenschutz">Datenschutz</a>
+            </div>
+            <div class="footer-link"><a href="#Kontakt">Kontakt</a></div>
+            <div class="footer-link"><a href="#Rezept">Rezept</a></div>
+          </div>
+          <!-- Social Icons -->
+          <div class="footer-right">
+            <a href="https://www.facebook.com" target="_blank"
+              ><img
+                src="./img/facebook_white.png"
+                id="Facebook-img"
+                alt="Facebook"
+            /></a>
+            <a href="https://www.instagram.com" target="_blank"
+              ><img src="./img/instagram_white.png" alt="Instagram"
+            /></a>
+            <a href="https://twitter.com" target="_blank"
+              ><img src="./img/twitter_white.png" alt="Twitter"
+            /></a>
+          </div>
         </div>
-        <!-- Unternehmen Column END -->
-
-        <!-- Quicklinks Column START -->
-        <div class="footer-column">
-          <h3>Quicklinks</h3>
-          <ul>
-            <li><a href="#">Nutzungsbedingungen</a></li>
-            <li><a href="#">Kontakt</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </div>
-        <!-- Quicklinks Column END -->
-
-        <!-- Newsletter Column START -->
-        <div class="footer-column">
-          <h3>Newsletter</h3>
-          <p>Frische Inspiration direkt in dein Postfach!</p>
-          <form class="subscribe-form">
-            <input type="email" placeholder="Email" />
-            <button type="submit" id="button-hover">Anmelden</button>
-          </form>
-        </div>
-        <!-- Newsletter Column END -->
+        <!-- Bottom Row: Copyright -->
+        <div class="footer-bottom">© 2026 Kochwelt</div>
       </div>
-      <!-- Footer Container END -->
-
-      <!-- Footer Bottom START -->
-      <div class="footer-bottom">© 2026 Kochwelt</div>
-      <!-- Footer Bottom END -->
     </footer>
     <!-- FOOTER END -->
   </body>
