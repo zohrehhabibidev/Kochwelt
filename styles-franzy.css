@@ -89,6 +89,10 @@ nav {
   width: 32px;
 }
 
+.checkbox {
+  display: none;
+}
+
 .section-headline {
   padding: 60px 160px;
 }
@@ -279,6 +283,31 @@ min width: 320px
 
   .burger-btn {
     display: flex;
+    padding-left: 14px;
+  }
+
+  #menu-toggle:checked + .burger-btn + .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+  }
+
+  .section-header::after {
+    bottom: -40px;
+  }
+
+  .header-logo {
+    padding-top: 50px;
+  }
+
+  .section-headline {
+    padding-top: 80px;
   }
 
   .icon-container {
