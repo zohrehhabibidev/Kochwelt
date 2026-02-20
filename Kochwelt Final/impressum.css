@@ -190,15 +190,15 @@ input#hamburg {
   top: 36px;
 }
 
-#hamburg:checked + .hamburg .line:nth-child(1) {
+#hamburg:checked+.hamburg .line:nth-child(1) {
   transform: translateY(12px) rotate(-45deg);
 }
 
-#hamburg:checked + .hamburg .line:nth-child(2) {
+#hamburg:checked+.hamburg .line:nth-child(2) {
   opacity: 0;
 }
 
-#hamburg:checked + .hamburg .line:nth-child(3) {
+#hamburg:checked+.hamburg .line:nth-child(3) {
   transform: translateY(-12px) rotate(45deg);
 }
 
@@ -355,6 +355,14 @@ footer {
   header {
     padding-left: 24px;
     padding-right: 24px;
+  }
+
+  .mobileHeader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .logoDesktop {
