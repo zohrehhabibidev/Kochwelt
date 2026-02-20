@@ -413,18 +413,15 @@ footer {
     --h6: 0.9rem;
   }
   .footer-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    background-color: var(--color-white);
-    height: 100%;
-    width: 8.5rem;
-    padding: 0 10px;
+    flex-direction:column;
+    gap:8px;
+    width:8.5rem;
+    height:auto;
+    overflow:visible;
+    padding:10px;
   }
-}
+  }
+
 @media (max-width: 768px) {
   .footer-top {
     flex-direction: column;
