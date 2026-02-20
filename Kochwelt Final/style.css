@@ -231,19 +231,11 @@ button {
 }
 
 .tagesrezept_frontpage a img {
-<<<<<<< HEAD
     height: 320px;
     width: 480px;
 
     border: 0;
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-=======
-  height: 320px;
-  width: 480px;
-
-  border: 0;
-  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
->>>>>>> 7994ca7 (index.hmtl entzerrt)
 }
 
 .tagesrezept_text {
@@ -282,10 +274,6 @@ figure img {
   object-fit: cover;
   display: block;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 7994ca7 (index.hmtl entzerrt)
 
 figcaption {
   text-align: center;
