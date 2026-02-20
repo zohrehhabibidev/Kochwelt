@@ -366,33 +366,34 @@ footer {
   }
 
   .full-text {
-  padding-inline: 64px;
-}
-
-@media (max-width: 768px) {
-  .footer-top {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    padding-inline: 64px;
   }
 
-  .footer-nav {
-    justify-content: center;
-    gap: 0.5rem;
-  }
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .footer-nav {
+      justify-content: center;
+      gap: 0.5rem;
+    }
 
     .full-text {
-  padding-inline: 24px;
+      padding-inline: 24px;
+    }
   }
-}
 
-@media (max-width: 500px) {
-  .footer-nav {
-    flex-direction: column;
-    gap: 8px;
-    width: 8.5rem;
-    height: auto;
-    overflow: visible;
-    padding: 10px;
+  @media (max-width: 500px) {
+    .footer-nav {
+      flex-direction: column;
+      gap: 8px;
+      width: 8.5rem;
+      height: auto;
+      overflow: visible;
+      padding: 10px;
+    }
   }
 }
