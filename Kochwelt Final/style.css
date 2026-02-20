@@ -547,10 +547,13 @@ footer {
 
   .frontpage_topic {
     padding-inline: 40px;
+    text-align: center;
   }
 
   .topic_img {
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    
   }
 
   .hide_mobile {
