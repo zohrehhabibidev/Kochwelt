@@ -363,13 +363,8 @@ footer {
 
 /* Footer Logo */
 .footer-left img.footer-logo {
-<<<<<<< HEAD
     max-height: 50px;
     width: auto;
-=======
-  max-height: 60px;
-  width: auto;
->>>>>>> 7994ca7 (index.hmtl entzerrt)
 }
 
 /* Footer Navigation links  */
@@ -415,33 +410,15 @@ footer {
 }
 
 .footer-right a img {
-<<<<<<< HEAD
     width: auto;
     height: 26px;
     transition: transform 100ms ease, color 100ms ease;
-=======
-  width: auto;
-  height: 24px;
-  transition:
-    transform 100ms ease,
-    color 100ms ease;
->>>>>>> 7994ca7 (index.hmtl entzerrt)
 }
 
 .footer-right a:hover img {
   transform: scale(1.2);
 }
 
-<<<<<<< HEAD
-=======
-#Facebook-img {
-  width: 18px;
-  height: 24px;
-  transition:
-    transform 100ms ease,
-    color 100ms ease;
-}
->>>>>>> 7994ca7 (index.hmtl entzerrt)
 
 /* Footer Bottom */
 .footer-bottom {
@@ -614,19 +591,11 @@ footer {
 }
 
 @media (max-width: 768px) {
-<<<<<<< HEAD
     .footer-top {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
     }
-=======
-  .footer-top {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
->>>>>>> 7994ca7 (index.hmtl entzerrt)
 
   .footer-nav {
     justify-content: center;
@@ -634,7 +603,6 @@ footer {
   }
 }
 
-<<<<<<< HEAD
 @media (max-width: 500px) {
 
     .footer-nav {
@@ -644,19 +612,4 @@ footer {
     height:auto;
     overflow:visible;
     padding:10px;    }
-=======
-@media (max-width: 480px) {
-  .footer-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    background-color: var(--color-white);
-    height: 100%;
-    width: 8.5rem;
-    padding: 0 10px;
-  }
->>>>>>> 7994ca7 (index.hmtl entzerrt)
 }
