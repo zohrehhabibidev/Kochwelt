@@ -67,8 +67,8 @@ header {
   width: 100%;
   max-width: 1920px;
   height: 120px;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: 64px;
+  padding-right: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -556,6 +556,14 @@ footer {
     padding-left: 24px;
     padding-right: 24px;
   }
+
+  .mobileHeader {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
   .logoDesktop {
     display: none;
