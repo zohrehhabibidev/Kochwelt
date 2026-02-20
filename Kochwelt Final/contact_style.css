@@ -416,30 +416,30 @@ input::placeholder {
 /* =====================
    Footer
 ===================== */
-footer {
-    display: flex;
-    flex-direction: column;
+.section-fullWidth {
+background: var(--color-footer-bg);
+width: 100%;
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: var(--color-footer-bg);
-    color: var(--color-footer-text);
-    padding-inline: clamp(var(--space-m), 5vw, var(--space-xl));
-    padding-block: 3rem 1rem;
-    gap: var(--space-l);
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-footer-text);
+  padding-inline: clamp(1rem, 10vw, 10rem);
+  padding-block: 3rem 1rem;
+  gap: var(--space-l);
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 1rem;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 100%;
 }
 
 /* Footer Logo */
@@ -621,7 +621,7 @@ footer {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 929px) {
     .footer-top {
         flex-direction: column;
         align-items: center;

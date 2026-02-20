@@ -323,30 +323,30 @@ figcaption {
 /* =====================
    Footer
 ===================== */
-footer {
-  display: flex;
-  flex-direction: column;
+.section-fullWidth {
+background: var(--color-footer-bg);
+width: 100%;
 }
 
-.footer {
+.footer-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: var(--color-footer-bg);
   color: var(--color-footer-text);
-  padding-inline: clamp(var(--space-m), 5vw, var(--space-xl));
+  padding-inline: clamp(1rem, 10vw, 10rem);
   padding-block: 3rem 1rem;
   gap: var(--space-l);
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-  gap: 1rem;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 100%;
 }
 
 /* Footer Logo */
@@ -379,10 +379,7 @@ footer {
   text-decoration: none;
   color: var(--color-text);
   background-color: transparent;
-  transition:
-    background-color 0.3s,
-    color 0.3s,
-    transform 100ms ease;
+  transition:background-color 0.3s,color 0.3s,transform 100ms ease;
   border-radius: 0.5rem;
 }
 
@@ -553,35 +550,15 @@ footer {
   .topic_img {
     display: flex;
     justify-content: center;
-    
+
   }
 
   .hide_mobile {
     display: none;
   }
-
-  .footer-column {
-    flex: 1 1 100%;
-    text-align: center;
-  }
-
-  .subscribe-form {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .subscribe-form input,
-  .subscribe-form button {
-    width: 90%;
-    border-radius: 6px;
-  }
-
-  .subscribe-form button {
-    margin-top: 0.5rem;
-  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 929px) {
     .footer-top {
         flex-direction: column;
         align-items: center;
