@@ -373,6 +373,10 @@ footer {
   .logoMobile {
     display: flex;
   }
+
+  .full-text{
+    padding-inline: 64px; 
+  }
 }
 
 @media (max-width: 768px) {
@@ -404,5 +408,6 @@ footer {
 
   .full-text {
   padding-inline: 24px;
+  }
 }
 }
