@@ -221,6 +221,8 @@ label.hamburg:hover {
     background-position: bottom;
     background-size: cover;
     height: 70dvh;
+    width: 100%;
+    max-width: 1920px;
 
 }
 
