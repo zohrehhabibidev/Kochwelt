@@ -251,12 +251,6 @@ button {
     padding-top: 0px;
 }
 
-figure img {
-    height: 240px;
-    width: 240px;
-    border: 0;
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-}
 
 .frontpage_suggestions {
     background-color: #efefef;
@@ -266,13 +260,23 @@ figure img {
     padding-block: 24px;
     width: 100%;
     max-width: 1920px;
+    flex: 1
 }
 
 .suggestions_icon_text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 240px;
+    height: 240px;
+    flex: 1;
+}
+figure img {
+    height: 240px;
+    width: 240px;
+    border: 0;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    object-fit: cover;
+    display: block;
 }
     
 
@@ -476,8 +480,21 @@ footer {
         flex-wrap: wrap;
     }
 
+    .tagesrezept_text h2 {
+        padding-top: 24px;
+    }
+
     .tagesrezept_text p {
         padding: 24px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tagesrezept_text {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
 
