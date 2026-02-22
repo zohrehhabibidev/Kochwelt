@@ -224,7 +224,6 @@ label.hamburg:hover {
 
 /*#region "contentContact"*/
 
-
 .contentContactImage {
     background-image: url(./img/aurelia-dubois-vmwZ1H3lMWE-unsplash.jpg);
     background-position: bottom;
@@ -254,6 +253,14 @@ label.hamburg:hover {
 
 .sectionContactFormRight h2 {
     text-align: center;
+}
+
+.tabletViewWhiteBackground {
+    display: none;
+}
+
+.desktopViewNoBackground {
+    width: 100%;
 }
 
 .contentContact {
@@ -530,10 +537,29 @@ width: 100%;
         flex-direction: column;
         padding-left: 24px;
         padding-right: 24px;
+        padding-bottom: 0;
     }
 
     .contentContactRight {
-        padding-top: 240px;
+        width: 100%;
+        margin-top: 80px;
+        padding-bottom: 40px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 20px;
+    }
+
+    .tabletViewWhiteBackground {
+        display: flex;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .desktopViewNoBackground {
+        display: none;
+    }
+
+    .contentContactImage {
+        height: 100dvh
     }
 
 

@@ -20,6 +20,26 @@
           .classList.toggle('resp_menu_closed')
       }
     </script>
+
+    <script>
+        function sendMail(event){﻿
+      event.preventDefault();
+      const data = new FormData(event.target);
+
+      // BEI "YOUR URL" FORMSPREE URL/FORM EINFÜGEN
+      fetch("YOUR_URL", {  
+          method: "POST",
+          body: new FormData(event.target),
+          headers: {
+              'Accept': 'application/json'
+          }
+      }).then(() => {
+          window.location.href = "./sent_mail.html";
+      }).catch((error) => {
+          console.log(error);
+      });
+      }
+    </script>
   </head>
 
   <body>
@@ -101,15 +121,17 @@
 
             <section class="contentContact">
               <section class="contentContactLeft">
-                <form class="sectionContactForm">
+
+                <form onsubmit="sendMail(event)" class="sectionContactForm">
                   <h2>Du hast eine Frage an uns?</h2>
 
                   <div class="personalData">
                     <div class="personalDataMail">
                       <input
-                        type="text"
+                        type="email"
                         class="personalDataMail colorPlaceholder"
                         placeholder="Deine E-Mail"
+                        name="e-mail"
                         required
                       />
                     </div>
@@ -139,6 +161,7 @@
                 </form>
               </section>
 
+              <div class="tabletViewWhiteBackground">
               <section class="contentContactRight sectionContactFormRight">
                 <h2>Oder du rufst uns einfach an</h2>
 
@@ -157,6 +180,29 @@
                   /></a>
                 </div>
               </section>
+              </div>
+
+              <div class="desktopViewNoBackground">
+              <section class="contentContactRight sectionContactFormRight">
+                <h2>Oder du rufst uns einfach an</h2>
+
+                <div class="phoneButton">
+                  <a href="tel: 0176 54564534"> 0176 54564534 </a>
+                </div>
+
+                <h2>Lass uns vernetzen</h2>
+
+                <div class="socialMediaIcons">
+                  <a href="https://www.instagram.com"
+                    ><img src="../assets/img/social media/instagram_logo.svg"
+                  /></a>
+                  <a href="https://www.facebook.com"
+                    ><img src="../assets/img/social media/facebook_logo.svg"
+                  /></a>
+                </div>
+              </section>
+              </div>
+              
             </section>
           </section>
         </main>
