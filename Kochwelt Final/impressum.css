@@ -209,6 +209,7 @@ label.hamburg:hover {
 /* Text */
 
 .full-text {
+  height: 100dvh;
   padding-inline: 160px;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -227,8 +228,8 @@ label.hamburg:hover {
    Footer
 ===================== */
 .section-fullWidth {
-background: var(--color-footer-bg);
-width: 100%;
+  background: var(--color-footer-bg);
+  width: 100%;
 }
 
 .footer-section {
@@ -245,11 +246,11 @@ width: 100%;
 }
 
 .footer-top {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 /* Footer Logo */
@@ -377,18 +378,19 @@ width: 100%;
     padding-inline: 64px;
   }
 }
-  @media (max-width: 768px) {
-    .full-text {
-      padding-inline: 24px;
-    }
-  }
 
-  @media (max-width: 929px) {
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
+@media (max-width: 768px) {
+  .full-text {
+    padding-inline: 24px;
+  }
+}
+
+@media (max-width: 929px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
 
   .footer-nav {
     justify-content: center;
@@ -396,13 +398,13 @@ width: 100%;
   }
 }
 
-  @media (max-width: 500px) {
-    .footer-nav {
-      flex-direction: column;
-      gap: 8px;
-      width: 8.5rem;
-      height: auto;
-      overflow: visible;
-      padding: 10px;
-    }
+@media (max-width: 500px) {
+  .footer-nav {
+    flex-direction: column;
+    gap: 8px;
+    width: 8.5rem;
+    height: auto;
+    overflow: visible;
+    padding: 10px;
   }
+}

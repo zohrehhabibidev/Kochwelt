@@ -209,6 +209,7 @@ label.hamburg:hover {
 /* Text */
 
 .full-text {
+  height: 100dvh;
   padding-inline: 160px;
   padding-top: 48px;
   padding-bottom: 48px;
