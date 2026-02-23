@@ -184,15 +184,15 @@ input#hamburg {
   top: 36px;
 }
 
-#hamburg:checked + .hamburg .line:nth-child(1) {
+#hamburg:checked+.hamburg .line:nth-child(1) {
   transform: translateY(12px) rotate(-45deg);
 }
 
-#hamburg:checked + .hamburg .line:nth-child(2) {
+#hamburg:checked+.hamburg .line:nth-child(2) {
   opacity: 0;
 }
 
-#hamburg:checked + .hamburg .line:nth-child(3) {
+#hamburg:checked+.hamburg .line:nth-child(3) {
   transform: translateY(-12px) rotate(45deg);
 }
 
@@ -231,11 +231,11 @@ button {
 }
 
 .tagesrezept_frontpage a img {
-    height: 320px;
-    width: 480px;
+  height: 320px;
+  width: 480px;
 
-    border: 0;
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border: 0;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .tagesrezept_text {
@@ -273,6 +273,7 @@ button {
   height: auto;
   flex: 1;
 }
+
 figure img {
   height: 240px;
   width: 240px;
@@ -326,7 +327,7 @@ figcaption {
   font-size: 32px;
 }
 
-.topic_img a img {
+.topic_img img {
   height: 240px;
   width: 100%;
   border: 0;
@@ -337,8 +338,8 @@ figcaption {
    Footer
 ===================== */
 .section-fullWidth {
-background: var(--color-footer-bg);
-width: 100%;
+  background: var(--color-footer-bg);
+  width: 100%;
 }
 
 .footer-section {
@@ -355,17 +356,17 @@ width: 100%;
 }
 
 .footer-top {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 /* Footer Logo */
 .footer-left img.footer-logo {
-    max-height: 50px;
-    width: auto;
+  max-height: 50px;
+  width: auto;
 }
 
 /* Footer Navigation links  */
@@ -392,7 +393,7 @@ width: 100%;
   text-decoration: none;
   color: var(--color-text);
   background-color: transparent;
-  transition:background-color 0.3s,color 0.3s,transform 100ms ease;
+  transition: background-color 0.3s, color 0.3s, transform 100ms ease;
   border-radius: 0.5rem;
 }
 
@@ -408,9 +409,9 @@ width: 100%;
 }
 
 .footer-right a img {
-    width: auto;
-    height: 26px;
-    transition: transform 100ms ease, color 100ms ease;
+  width: auto;
+  height: 26px;
+  transition: transform 100ms ease, color 100ms ease;
 }
 
 .footer-right a:hover img {
@@ -535,9 +536,13 @@ width: 100%;
     justify-content: space-between;
   }
 
-  .topic_img a img {
+  .topic_img img {
     height: 180px;
     width: 180px;
+  }
+
+  .topic_text {
+    text-align: left;
   }
 }
 
@@ -562,6 +567,7 @@ width: 100%;
 
   .topic_img {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
   }
@@ -572,11 +578,11 @@ width: 100%;
 }
 
 @media (max-width: 929px) {
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
 
   .footer-nav {
     justify-content: center;
@@ -586,11 +592,12 @@ width: 100%;
 
 @media (max-width: 500px) {
 
-    .footer-nav {
-    flex-direction:column;
-    gap:8px;
-    width:8.5rem;
-    height:auto;
-    overflow:visible;
-    padding:10px;    }
+  .footer-nav {
+    flex-direction: column;
+    gap: 8px;
+    width: 8.5rem;
+    height: auto;
+    overflow: visible;
+    padding: 10px;
+  }
 }
