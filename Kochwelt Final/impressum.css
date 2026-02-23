@@ -42,32 +42,28 @@ html {
 main {
   flex: 1;
   width: 100%;
-  max-width: 1920px;
 }
 
-.maxWidth {
+.maxWidth_header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.headerDesignFullLength {
   width: 100%;
   height: 120px;
   box-shadow: 4px 0px 8px #efefef;
 }
 
+
 /*#region "header"*/
 
 header {
-  position: absolute;
   top: 0;
   width: 100%;
   max-width: 1920px;
   height: 120px;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: 64px;
+  padding-right: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,7 +84,7 @@ nav {
   height: 100%;
   display: flex;
   align-items: end;
-  gap: 16px;
+  gap: 16px
 }
 
 nav a {
@@ -143,6 +139,7 @@ nav a:hover {
   width: 100%;
 }
 
+
 .resp_menu_closed {
   transform: translateX(400px);
 }
@@ -150,6 +147,7 @@ nav a:hover {
 .burgerMenu {
   display: none;
 }
+
 
 label.hamburg {
   display: block;
@@ -163,7 +161,7 @@ label.hamburg {
 }
 
 input#hamburg {
-  display: none;
+  display: none
 }
 
 .line {
@@ -206,13 +204,22 @@ label.hamburg:hover {
   cursor: pointer;
 }
 
+
+
+/*#endregion "header"*/
 /* Text */
+.max_width {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .full-text {
   height: 100dvh;
-  padding-inline: 160px;
+  padding-inline: 64px;
   padding-top: 48px;
   padding-bottom: 48px;
+  max-width: 1920px;
 }
 
 .full-text h1 {
@@ -236,7 +243,8 @@ label.hamburg:hover {
   display: flex;
   flex-direction: column;
   color: var(--color-footer-text);
-  padding-inline: clamp(1rem, 10vw, 10rem);
+  /* padding-inline: clamp(1rem, 10vw, 10rem); */
+  padding-inline: 64px;
   padding-block: 3rem 1rem;
   gap: var(--space-l);
   width: 100%;
