@@ -282,6 +282,12 @@ figure img {
   object-fit: cover;
   display: block;
 }
+figure:hover {
+  scale: 1.2;
+}
+figure {
+  transform: all 125ms ease-in;
+}
 
 figcaption {
   text-align: center;
@@ -462,8 +468,8 @@ figcaption {
   }
 
   header {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   .logoDesktop {
@@ -508,7 +514,7 @@ figcaption {
 @media (max-width: 1150px) {
   .tagesrezept_frontpage a img {
     height: 280px;
-    width: 440px;
+    width: 100%;
   }
 
   .frontpage_suggestions {
@@ -549,6 +555,10 @@ figcaption {
 }
 
 @media (max-width: 536px) {
+  header {
+    padding-inline: 40px;
+  }
+
   .tagesrezept_frontpage {
     padding-inline: 40px;
   }
