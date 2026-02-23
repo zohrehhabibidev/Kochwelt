@@ -307,6 +307,7 @@ figcaption {
 .frontpage_topic_headline h2 {
   text-align: center;
   padding-top: 48px;
+  padding-inline: 40px;
 }
 
 .topic_text {
@@ -329,6 +330,7 @@ figcaption {
 
 .topic_img img {
   height: 240px;
+  object-fit: cover;
   width: 100%;
   border: 0;
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
